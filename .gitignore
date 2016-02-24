@@ -1,0 +1,9 @@
+packages
+MVCStruct.BLL/bin
+MVCStruct.BLL/obj
+MVCStruct.DAL/bin
+MVCStruct.DAL/obj
+MVCStruct.Model/bin
+MVCStruct.Model/obj
+MVCStruct.Web/bin
+MVCStruct.Web/obj
