@@ -51,6 +51,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,11 +64,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EFContext.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MVCStruct.Model\MVCStruct.Model.csproj">
+      <Project>{8e65a5ae-2bf3-4fe1-8932-f292c30e1948}</Project>
+      <Name>MVCStruct.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MVCStruct.Tool\MVCStruct.Tool.csproj">
+      <Project>{661ff723-bb25-485b-a3f4-fa426f840cde}</Project>
+      <Name>MVCStruct.Tool</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

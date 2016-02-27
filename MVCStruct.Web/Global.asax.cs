@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVCStruct.Tool;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,6 +16,7 @@ namespace MVCStruct.Web
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            LogHelper.Config();
         }
     }
 }
